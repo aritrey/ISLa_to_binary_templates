@@ -26,7 +26,7 @@ newgrp docker
     - an ISLa constraint in  ./l_isla
 - The result will be found in the folder ./output
 
-- examples of grammars and corresponding ISLa coonstraints can be found in ./grammars_with_constraints
+- examples of grammars and corresponding ISLa constraints can be found in ./grammars_with_constraints
 
 ### On Linux
 - $ ./run.sh
