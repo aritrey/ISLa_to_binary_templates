@@ -15,7 +15,7 @@ import py010parser
 
 
 def print_config(input_file: str, isla_file:str,output_file: str, universal: bool) -> None:
-    print(f"Inputfile: {input_file}\nIslafile: {isla_file}\nOutputfile: {output_file}\nTo Universal: {universal}")
+    print(f"Inputfile: {input_file}\nIslafile: {isla_file}\nOutputfile: {output_file}\n")
 
 
 def convert_from_universal(input_file: Optional[TextIO],isla_file:Optional[TextIO]) -> str:
@@ -84,8 +84,6 @@ def main() -> None:
                         help="InputIslafile: File")
     parser.add_argument('-o', "--output", dest="output",
                         help="Outputgrammarfile: File")
-    parser.add_argument('-u', "--other_files_which_annoy_me_atm", action='store_true',
-                        help="Converts to other_files_which_annoy_me_atm, if not set it will convert from other_files_which_annoy_me_atm to binary template.")
 
     pargs = parser.parse_args()
 

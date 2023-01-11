@@ -333,7 +333,6 @@ class QuantorExpression(object):
             self.getVariablesOnWay(self.var2,varOnWay2)
             varOnWay2 = varOnWay2[::-1]
         else:
-            print(structuralConstraints)
             if(len(structuralConstraints)>0):
                                
                 for structuralConstr in structuralConstraints:
@@ -1325,7 +1324,6 @@ class QuantorExpression(object):
                         condition=[condition]
 
                     self.getAvoidInfo(fullQuantorExpression, grammar, constraint.backtrace.locationToAvoid,condition, lexer)
-                    fullQuantorExpression[-1].printAttributesAsString()
 
                 else:
                     raise ValueError("backtrace type not yet implemented")
@@ -2301,7 +2299,6 @@ byte removeFromStackWithIndex(int index, string stack_val [], int currIndex){
 
                     newChildArr.append(childVal)
                     for derivationRule in childArr[recursionIndex-i:recursionIndex+1]:
-                        print("append dinge vor recursion rule jetzt danach: derication rule to append: ", derivationRule)
                         newChildArr.append(derivationRule)
                     childArr=newChildArr   
 
@@ -2483,7 +2480,6 @@ byte removeFromStackWithIndex(int index, string stack_val [], int currIndex){
 
             
         for constr in newConstraints:
-            constr.printAttributes()
             libForm_quantorExpression.append(constr)
 
         

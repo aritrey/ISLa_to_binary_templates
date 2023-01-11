@@ -468,7 +468,6 @@ def childInParentSeen(parent,child,grammar, waysSeen=[]):
     if(not parentStartsWithNonterm and childStartsWithNonterm):#nur parent ist term, deshalb kann child nicht drin sein
         terminalParent = findFirstTerminal(parent)
 
-        print("remove parent nonterm, from to:",parent,parent[len(terminalParent):])
         return childInParentSeen(parent[len(terminalParent):], child, grammar)
 
     if(parentStartsWithNonterm and not childStartsWithNonterm):# nur parent ist nonterm->leite ab
