@@ -1,0 +1,4 @@
+forall <F> f2="({<E> e})":
+exists <TT> tt="*{<F> f1}<TT>" in e:
+(= f1 "g")
+

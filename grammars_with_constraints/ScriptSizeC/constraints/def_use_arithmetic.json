@@ -1,0 +1,3 @@
+forall <term> trm="{<id> id1}":
+  exists <declaration> decl="int   {<id> id6}<declaration'>;     ":
+    (before(decl, trm) and (= id1 id6))

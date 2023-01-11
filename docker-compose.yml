@@ -1,0 +1,33 @@
+# code in this file adapted from:
+# https://github.com/Normynator/BTMeetsCFG/tree/8a0ec99bd6e08dc59c09650631c3cf5afc59817a (private repository)
+# last access: 09.01.2023
+# GPL-3.0 license 
+# Copyright (c) 2022 Norman Ziebal
+
+
+version: '3.9'
+services:
+    converter:
+        # image: normynator/private:format-fuzzer
+        build: 
+                context: ./binary_template_converter
+                dockerfile: Dockerfile
+                args:
+                    ENV: converter
+        volumes:
+            - ./input:/converter/input
+            - ./l_isla:/converter/l_isla
+            - ./output:/converter/output
+    tests:
+        # image: normynator/private:format-fuzzer
+        build: 
+                context: ./binary_template_converter
+                dockerfile: Dockerfile
+                args:
+                    ENV: tests
+        volumes:
+            - ./input:/converter/input
+            - ./l_isla:/converter/l_isla
+            - ./output:/converter/output
+            - ./test_output:/converter/test_output
+            - ./cache:/FormatFuzzer/build

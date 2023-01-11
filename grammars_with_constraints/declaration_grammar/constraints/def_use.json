@@ -1,0 +1,3 @@
+forall <lhs> l="{<var> v3}":
+exists <assign> r1="int {<var> v4}=   <lhs>;   ":
+((= v3 v4) and before(r1, l))

@@ -1,0 +1,7 @@
+
+
+forall <F> f1="({<E> e})":
+	exists <F> f2:
+	((= f2 "a") and before(f2, e))
+    
+    

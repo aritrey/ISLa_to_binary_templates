@@ -1,0 +1,3 @@
+forall <assign> a="int {<var> v1}=   {<lhs> lhs};   ":
+forall <var> v2 in lhs:
+(not (= v1 v2))

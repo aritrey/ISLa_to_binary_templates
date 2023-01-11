@@ -1,0 +1,3 @@
+forall <TT> tt1="*{<F> f1}<TT>":
+exists <F> f2="({<E> e})":
+((= f1 "g") and inside(tt1, e))

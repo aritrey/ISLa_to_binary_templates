@@ -1,0 +1,3 @@
+exists <start> s="{<E> e1}$":
+  exists <F> f1 in e1: 
+    (= f1 "b") 

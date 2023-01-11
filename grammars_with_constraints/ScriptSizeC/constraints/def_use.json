@@ -1,0 +1,6 @@
+forall <term> trm="{<id> id1}":
+  exists <declaration> decl="int   {<id> id6}<declaration'>;     ":
+    (before(decl, trm) and (= id1 id6)) and
+    forall <assignment> assgn_2="{<id> id1_2} =    <expr>;     ":
+  exists <statements> stmt2_2="int   {<id> id2_2}<declaration'>;     {<statements> stmt1_2}":
+    (inside(assgn_2, stmt1_2) and (= id1_2 id2_2))

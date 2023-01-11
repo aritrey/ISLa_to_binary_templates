@@ -1,0 +1,6 @@
+exists <start> s="{<E> e1}$":
+  exists <F> f1 in e1: 
+    (= f1 "b") and
+forall <F> f2="({<E> e2})" in start:
+  forall <F> f3 in e2: 
+    (= f3 "a")
