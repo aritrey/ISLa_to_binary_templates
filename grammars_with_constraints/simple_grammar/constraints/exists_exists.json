@@ -1,3 +1,3 @@
 exists <F> f1="({<E> e})":
     exists <F> f2 in e:
-	(= f2 "a")
+	    (= f2 "a")

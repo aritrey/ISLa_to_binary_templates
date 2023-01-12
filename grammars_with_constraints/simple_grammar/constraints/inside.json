@@ -1,3 +1,3 @@
 exists <F> f2:
     forall <F> f1="({<E> e})":
-	((= f2 "a") and inside(f2, e))
+	    ((= f2 "a") and inside(f2, e))
