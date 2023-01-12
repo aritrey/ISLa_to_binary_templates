@@ -175,7 +175,9 @@ class BinaryTemplateGeneratorSpecific:
 
             //pref possibility
             {{ isla_nonterm_info["pref_chance"] }}
-
+            if(pref_val_Index==-1){
+                pref_possibility=0;
+            }
 
             ReadBytes(selection, FTell(), {{ length }}, pref_val ,possible_val, pref_possibility);
             
