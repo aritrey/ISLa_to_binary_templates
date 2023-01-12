@@ -1,3 +1,0 @@
-exists <start> s:
-  exists <E> e in s: 
-    (= e "x") 
