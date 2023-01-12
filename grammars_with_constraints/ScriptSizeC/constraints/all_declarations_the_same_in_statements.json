@@ -1,3 +1,0 @@
-forall <statements> stmt1_1="int   {<id> id1_1}<declaration'>;     {<statements> parentStmt1}":
-forall <declaration> stmt2_1="int   {<id> id2_1}<declaration'>;     " in parentStmt1:
-(= id1_1 id2_1)
